@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    box-sizing: border-box; 
+     /* respeta el tmaño del elemeento*/
+}
+body {
+    background-color: bisque;
+    height:100vh;
+
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr;
+
+    grid-template-areas:
+    "side header"
+    "side main";
+}
+
+.header {
+    background-color: blue;
+    grid-area: header;
+}
+.sider {
+    background-color: aquamarine;
+    grid-area: side;
+}
+.main {
+    background-color: blueviolet;
+    grid-area: main;
+}

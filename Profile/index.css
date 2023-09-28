@@ -1,0 +1,99 @@
+:root {
+    --primary-text-color: white;
+}
+
+
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(peakpx\ \(2\).jpg
+);
+    background-position: center;
+    background-size: cover;
+    color: var(--primary-text-color);
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    max-width: 320px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 80px;
+    backdrop-filter: blur(16px);
+
+    overflow: hidden;
+    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5), 0 0 8px 4px rgba(255, 255, 255, 0.5);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    border-radius: 40%;
+    box-shadow: 0 0 16px 0 rgb(247, 245, 245);
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+h1 {
+
+    font-size: 20px;
+    color: var(--primary-text-color);
+}
+
+h2 {
+
+    font-size: 10px;
+    color: var(--primary-text-color);
+    font-weight: 400;
+}
+
+p {
+
+    font-size: 10px;
+    color: var(--primary-text-color);
+}
+
+span {
+
+    font-size: 10px;
+    color: var(--primary-text-color);
+    font-weight: 400;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill {
+    background-color: #00ff15;
+    padding: 4px 16px;
+    border-radius: 16px;
+    font-weight: 700;
+
+}
+
+a {
+    font-size: 20px;
+    color: var(--primary-text-color);
+}
+

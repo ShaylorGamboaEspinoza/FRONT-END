@@ -1,0 +1,73 @@
+@keyframes latidito {
+    from{
+        transform:scale(1)
+    }
+    to {
+        transform: scale(0.55);
+    }
+}
+
+.body {
+    margin:0;
+    background-color: crimson;
+    color: white;
+    font-family: monospace;
+  
+}
+
+.hero{
+    min-height: 100 vh;
+    background-image: radial-gradient(trasparent, black);
+    display:flex;
+}
+.hero__title {
+    font-size: 2.5rem;
+    animation: latidito 1s ease-in-out 0s infinite alternate ;
+}
+.hero__acrostic {
+    all:unset;
+    display: flex;
+    gap:0.5rem;
+}
+.container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__letter:nth-child(1){
+    color: aquamarine;
+}
+.hero__letter:nth-child(2){
+    color: yellow;
+}
+.hero__letter:nth-child(3){
+    color: goldenrod;
+}
+.hero__letter:nth-child(4){
+    color: darkorange;
+}
+.hero__letter:nth-child(5){
+    color: wheat;
+}
+.hero__letter:nth-child(6){
+    color: orchid;
+}
+.hero__letter:nth-child(7){
+    color: gainsboro;
+}
+
+.hero__letter::before {
+    content: var(--letter);
+    position: absolute;
+    top:0;
+
+}
+.hero__letter::after {
+    content: var(--letter);
+    position: absolute;
+    top:0;
+}
