@@ -1,11 +1,17 @@
-m,nmbb
-,n,
-nmm,
+*{
+    margin:0;
+}
+header{
+    background-color: black;
+    color:white;
+    font-size: 20px;
 
+    padding: 25px;
 
-dscsc
-
-descdc
-
-desc
-solidcolor
+}
+.hostalSK {
+    font-size: 40px;
+}
+.coders{
+    text-align: right;
+}

@@ -14,7 +14,7 @@ body {
     overflow: hidden;
 }
 .titulo {
-    color:blue;
+    color:rgb(0, 2, 5);
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
@@ -22,49 +22,72 @@ body {
 header {
     width: 100%;
     height: 600px;
-    background-color: rgb(2, 2, 2);
-    background: -webkit-linear-gradient(to right, hsla(16, 87%, 49%, 0.459), hsla(277, 92%, 30%, 0.664)), url(ELEVANDO\ IDEAS\ \(1\).png);
+    background-color: rgb(255, 252, 252);
+    background: -webkit-linear-gradient(to left, hsla(0, 3%, 94%, 0.459), hsla(127, 100%, 2%, 0.664)), url(logo\ de\ express\ wash.JPG);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(183, 78%, 53%, 0.459), hsla(247, 46%, 65%, 0.664)), url(ELEVANDO\ IDEAS\ \(1\).png);
+    background: linear-gradient(to left, hsla(185, 41%, 95%, 0.459), hsla(197, 82%, 67%, 0.601)), url(logo\ de\ express\ wash.JPG);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    width: 100%;
 }
 nav {
     text-align: right;
-    padding: 30px 50px 0 0 ;
+    padding: 30px 50px 10px 0 ;
+    background-color: rgba(255, 255, 255, 0.532);
 }
 nav > a {
-    color:rgb(5, 5, 5);
-    font-weight: 300;
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    font-weight: 100px;
     text-decoration: none;
     margin-right: 10px;
-   
 }
 nav > a:hover {
-    background-color: rgb(0, 255, 21);
+    color:white;
+    padding: 0.2vw;
+    background-color: rgba(95, 115, 124, 0.635);
     border-radius: 10px;
 }
+@media screen and (max-width:992px) {
+    .ancors {
+        padding: 0;
+        margin: 0;
+    }
+ 
+    .ancors a{
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(22, 22, 21, 0.394);
+      color: rgb(255, 255, 255);
+      text-align: center;
+      margin: 0;
+      ;
+    }
+}
+
 header .textos-header{
     display: flex;
     height: 430px;
     width: 100%;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    justify-content: end;
+    text-shadow:blue ;
+
 }
 
 .textos-header h1{
-    font-size: 50px;
-    color:#fff;
+    font-size: 4vw;
+    color:#000000;
+    text-align: end ;
 }
 
 .textos-header h2{
-    font-size: 20px;
-    font-weight: 100;
-    color:#010101;
+    font-size: 2vw;
+    font-weight: 100px;
+    color:#000000;
 }
 .wave {
     position: absolute;

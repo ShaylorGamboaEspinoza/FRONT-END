@@ -1,0 +1,43 @@
+///**** INDEX.HTML  *///
+
+
+<script type='module' src="./js/index.js" > </script>
+//////////
+
+/***  JS/ INDEX.JS ***/
+
+'use strict';
+
+IMPORT HEADER FROM './modiles/header.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+header();
+})
+
+/////
+
+
+//***HEADER.JS *///
+const header= ()=> {
+const header=document.querySelector('.header');
+const nav=document.querySelector('.header-nav');
+const menuButton=document.getElementaById ('headerNavMenuIconContainer);
+const menuCloseButton=document.getElementaById ('headerNavMenuCloseIconContainer);
+const linksMenu=document.querySelector ('header-nav__menu-link-list');
+
+document.addEventListener('scroll',()=> {
+header.classList.toggle('header--scroll',scrolly>0);
+header.classList.toggle('header-nav--scroll',scrolly>0);
+});
+
+menuButton.addEventListener('click', ()=> linksMenu.classList.add('header-nav__menu-link-list--open'));
+menuCloseButton.addEventListener('click', ()=> linksMenu.classList.remove('header-nav__menu-link-list--open'));
+});
+};
+export default header;
+/////
+
+
+
+
+
