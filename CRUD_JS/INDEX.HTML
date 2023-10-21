@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY APP</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="app">
+        <h1> Student list</h1>
+        <form id="studentForm" class="student_card student_form">
+            <label for="name">
+                <span>Name</span>
+                <input id="name"  type="text" placeholder="Ex. Marina Navarro">
+            </label>
+            <label for="city">
+                <span>Ciudad</span>
+                <input id="city"  type="text" placeholder="Ex. Lima">
+            </label>
+            <input type ="hidden" id="studentId" value="">
+            <button> Save</button>
+            <button type="reset"> Clean</button>
+        </form>
+        <div id="studentList" class="student_list student_card" >
+            No hay registros
+       
+        
+        </div>
+    </div>
+    <script src="./INDEX.JS"> </script>
+</body>
+</html>
